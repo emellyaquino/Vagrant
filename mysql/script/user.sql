@@ -1,0 +1,9 @@
+CREATE USER IF NOT EXISTS 'emelly'@'%' IDENTIFIED BY 'emelly';
+
+CREATE DATABASE IF NOT EXISTS Marketplace;
+
+ALTER DATABASE Marketplace
+  DEFAULT CHARACTER SET utf8
+  DEFAULT COLLATE utf8_general_ci;
+
+GRANT ALL PRIVILEGES ON Marketplace.* TO 'emelly'@'%' IDENTIFIED BY 'emelly';
